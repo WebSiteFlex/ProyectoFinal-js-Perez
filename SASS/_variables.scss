@@ -1,0 +1,42 @@
+
+//colors webSite:
+
+$lowColor: #FEFAF0;
+$mediumColor:#DDDDCC;
+$highColor:#C4C197;
+
+
+@mixin buttonMain{
+    background-color:#FEFAF0;
+    width: 110px;
+    padding: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color:#686654;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+
+    &:hover{
+        background-color: #403F2B;
+        color: white;
+        box-shadow: inset 0 0 7px 5px #29281b;
+    }
+}
+
+@mixin buttonArticle{
+    background-color:#403F2B ;
+    width: 110px;
+    padding: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color:white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: #C4C197; 
+        color: #4B4A33;
+        box-shadow: inset 0 0 7px 5px #29281b;
+    }
+}

@@ -1,0 +1,269 @@
+// Styles's google Font
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+
+@import "_contact.scss", "_faq.scss","_ourMission.scss","_shopAll.scss","_variables";
+// styles
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+.gridFather {
+    font-size: 18px;
+    background-color: #FEFAF0;
+}
+
+//header
+
+.navbarHeader {
+    width: 100%;
+    height: 2.5rem;
+
+    nav {
+        background-color: #fff7e4;
+        text-transform: capitalize;
+        font-size: 1.25rem;
+    }
+
+}
+
+//main
+
+.main {
+    width: 100%;
+    height: 37.5rem;
+    padding: 0;
+    background-image: url("../img/picture-main.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+    div{
+        width: 100%;
+        height: 100%;
+        padding: 1.25rem;
+        padding-top: 6.875rem;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.356);
+        
+        h1{
+            color: #FFFDC3;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 15rem;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .containerButton{
+            all: unset;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2.5rem;
+
+            button{
+                all: unset;
+                @include buttonMain;
+            }
+        }
+    }
+ 
+}
+
+//section1
+
+.titleNewProducts{
+    width: 1005;
+    height: 1.25rem;
+    padding: 1.25rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+
+    h3{
+        text-align: center;
+        color:#403F2B;
+        text-transform: capitalize;
+        font-size: 1.75rem;
+    }
+}
+
+
+.newIn{
+    width: 100%;
+    height: 18.75rem;
+    padding: 1.875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    div{
+        img{
+            object-fit: contain;   
+            border-radius: 1.25rem;
+            margin-bottom: 0.625rem;
+            cursor: pointer;
+        }
+
+        h5{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        h6{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        span{
+            font-size: 1.125rem;
+            text-align: center;
+            color:#838070;
+        }
+    }
+}
+
+//section2
+
+.article{
+    width: 100%;
+    height: 38.4375rem;
+    padding: 3.75rem;
+    background-color: #C4C197;
+    margin-top: 3.75rem;
+    margin-bottom: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .containerElements{
+        width: 441px;
+        height: auto;
+
+        h2{
+            color:#403F2B;
+            font-size: 3.4375rem;
+            text-transform: capitalize;
+        }
+        p{
+            color:#7D7B5D;
+            font-size: 1.0625rem;
+        }
+
+        button{
+            all: unset;
+            @include buttonArticle;
+        }
+    }
+
+    .containerIA{
+        width: 441px;
+        height: auto;
+
+        img{
+            border-radius: 1.375rem;
+        }
+    }
+}
+
+//section3
+
+.tititleCollection{
+    width: 100%;
+    height: 1.875rem;
+    margin-top: 2.1875rem;
+    margin-bottom: 2.1875rem;
+    h2{
+        text-align: center;
+        font-size:1.875rem;
+        color:#403F2B;
+        text-transform: capitalize;
+    }
+}
+
+//section4
+
+.categoryProducts{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 2.5rem;
+
+    .n1{
+        background-image: url("../img/portrait2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+
+        &:hover{
+            background-size: 700px;
+        }
+    }
+
+    .n2{
+        background-image: url("../img/portrait3.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+
+        &:hover{
+            background-size: 700px;
+        }
+    }
+
+    .n3{
+        background-image: url("../img/portrait4.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+
+        &:hover{
+            background-size: 700px;
+        }
+    }
+
+    .containerCategory{
+        width: 286px;
+        height: 286px;
+        border-radius: 1.875rem;
+        margin-right: 20px;
+        
+        .subContainerCategory{
+            width: 286px;
+            height: 286px;
+            border-radius: 1.875rem;
+            background-color: rgba(0, 0, 0, 0.356);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        h4{
+            color:#FFFDC3;
+            text-transform: capitalize;
+            font-size: 3.375rem;
+        }
+
+        h6{
+            color: white;
+            text-transform: capitalize;
+            font-size: 1.0625rem;
+        }
+
+        }
+    }
+}
