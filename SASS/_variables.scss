@@ -4,7 +4,8 @@
 $lowColor: #FEFAF0;
 $mediumColor:#DDDDCC;
 $highColor:#C4C197;
-
+$letterColor:#403F2B;
+$footerBGColor:#E8E59B;
 
 @mixin buttonMain{
     background-color:#FEFAF0;
@@ -39,4 +40,12 @@ $highColor:#C4C197;
         color: #4B4A33;
         box-shadow: inset 0 0 7px 5px #29281b;
     }
+}
+
+@mixin inputFoo{
+    width: 400px;
+    height: 30px;
+    padding:20px;
+    color: #403F2B;
+    border-bottom: 3px solid #403F2B ;
 }
