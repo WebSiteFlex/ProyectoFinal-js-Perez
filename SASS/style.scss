@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
 
 
-@import "_contact.scss", "_faq.scss", "_ourMission.scss", "_shopAll.scss", "_variables";
+@import "_cart.scss","_shopAll.scss", "_variables.scss";
 
 // styles
 * {
@@ -111,6 +111,10 @@
             button {
                 all: unset;
                 @include buttonMain;
+
+                a{
+                    all: unset;
+                }
             }
         }
     }

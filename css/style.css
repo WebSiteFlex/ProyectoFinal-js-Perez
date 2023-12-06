@@ -1,4 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
+.gridCart {
+  font-size: 18px;
+  background-color: #FEFAF0;
+  position: relative;
+}
+
+.titleCart {
+  width: 100%;
+  height: 30px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.titleCart h1 {
+  color: #403F2B;
+  font-size: 90px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#productCart {
+  width: 100%;
+  height: 500px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+#productCart .counter {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#productCart .counter table {
+  background-color: #FEFAF0;
+  width: 90%;
+  border-radius: 20px;
+}
+#productCart .counter table th {
+  color: #403F2B;
+  text-transform: capitalize;
+}
+#productCart .counter table img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease-in-out;
+}
+#productCart .counter table img:hover {
+  box-shadow: 0 0 12px 3px;
+}
+#productCart .containerPurchase {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#productCart .containerPurchase button {
+  all: unset;
+  width: 242px;
+  padding: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #757548;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#productCart .containerPurchase button:hover {
+  background-color: #919159;
+}
+
+.storeGrid {
+  font-size: 18px;
+  background-color: #FEFAF0;
+  position: relative;
+}
+
+.title {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.title h1 {
+  color: #403F2B;
+  font-size: 90px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#listProducts {
+  width: 80%;
+  height: auto;
+  padding: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 3fr);
+  grid-template-rows: repeat(5, 3fr);
+  gap: 4px;
+}
+#listProducts div {
+  width: 300px;
+  height: 450px;
+  margin-top: 40px;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#listProducts div img {
+  width: 300px;
+  height: 450px;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#listProducts div img:hover {
+  width: 290px;
+  height: 440px;
+  box-shadow: 0 0 7px 7px rgb(104, 104, 104);
+}
+#listProducts div h6 {
+  width: auto;
+  height: auto;
+  color: #403F2B;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+#listProducts div span {
+  color: #403F2B;
+  font-size: 18px;
+  text-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -104,6 +250,9 @@
   background-color: #403F2B;
   color: white;
   box-shadow: inset 0 0 7px 5px #29281b;
+}
+.main div .containerButton button a {
+  all: unset;
 }
 
 .titleNewProducts {

@@ -49,3 +49,21 @@ $footerBGColor:#E8E59B;
     color: #403F2B;
     border-bottom: 3px solid #403F2B ;
 }
+
+//buttonCart
+
+@mixin cartButton{
+    width: 242px;
+    padding: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color:#757548;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover{
+        background-color:#919159; 
+    }
+}
