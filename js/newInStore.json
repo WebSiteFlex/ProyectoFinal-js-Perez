@@ -1,0 +1,30 @@
+[
+    {
+      "image": "#",
+      "title": "Stainless Steel",
+      "price": 25,
+      "id": 1,
+      "category": "bottle"
+    },
+    {
+      "image": "#",
+      "tittle": "Organic Cotton",
+      "price": 5,
+      "id": 2,
+      "category": "Mesh Bags"
+    },
+    {
+      "image": "#",
+      "title": "Seaweed",
+      "price": 6.5,
+      "id": 3,
+      "category": "Natural Soap"
+    },
+    {
+      "image": "#",
+      "title": "Eco Glass",
+      "price": 5.5,
+      "id": 4,
+      "category": "bottle"
+    }
+  ]
