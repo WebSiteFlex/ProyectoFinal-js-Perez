@@ -167,6 +167,25 @@ function showFullPrice(){
 emptyingAndLoading()
 
 
+const finalizePurchase = document.querySelector("#finalizePurchase") 
+
+function finalizePurchaseAndClear(){
+  const tfoot = document.querySelector(".tfoot")
+  finalizePurchase.addEventListener("click",()=>{
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "You bought correctly the products",
+      showConfirmButton: false,
+      timer: 1500
+
+    
+    });
+    listCart.innerHTML = "";
+    tfoot.innerHTML = "";
+  })
+}
+finalizePurchaseAndClear()
 
 
 
