@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
 
 
-@import "_cart.scss","_shopAll.scss", "_variables.scss";
+@import "_cart.scss", "_variables.scss";
 
 // styles
 * {
@@ -111,14 +111,14 @@
             button {
                 all: unset;
                 @include buttonMain;
-
-                a{
-                    all: unset;
-                }
             }
         }
     }
 
+    
+}
+.ShopNow{
+    all: unset;
 }
 
 //section1
@@ -141,21 +141,24 @@
 
 .newIn {
     width: 100%;
-    height: 18.75rem;
+    height: auto;
     padding: 1.875rem;
     margin-top: 1.875rem;
     margin-bottom: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     div {
         img {
+            width: 200px;
+            height: 250px;
             object-fit: contain;
             border-radius: 1.25rem;
             margin-bottom: 0.625rem;
             cursor: pointer;
+
         }
 
         h5 {
@@ -501,6 +504,7 @@
     height: 1400px;
     padding: 30px;
     background-color: $footerBGColor;
+    margin-top:50px;
 
     .section1 {
         width: 100%;
