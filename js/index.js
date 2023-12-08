@@ -120,64 +120,56 @@ function obtainDataInput() {
 obtainDataInput()
 
 
+const stored = localStorage.getItem("newCart");
+const resultStored = JSON.parse(stored);
+const table = document.querySelector("tbody");
+
+function createCardC(show){
+  return `
+
+  <tr>
+      <td><img src="${show.image}"></td>
+      <td>${show.title}</td>
+      <td>usd${show.price.toFixed(2)}</td>
+
+  </tr>
+`
+}
+
 //show cart 
 
 
- const listCart = document.querySelector("#counter");
+ const listCart = document.querySelector(".tableBody");
+const cell = document.querySelector("td#price");
 
-function createCardShowProducts(show) {
-  return `
-  <table class="table">
-  <thead>
-      <tr>
-          <th>image</th>
-          <th>tittle</th>
-          <th>price</th>
-          </tr>
-  </thead>
+function emptyingAndLoading(){
+ listCart.innerHTML = "";
 
-  <tbody>
-      <tr>
-          <th><img src="${show.image}" alt="img"></th>
-          <th>${show.title}</th>
-          <th class="price">$${show.price}</th>
-      </tr>
-  </tbody>
-  <tfoot>
-      <tr>
-          <th id="total">total:${updateTotal()}</th>
-          <th></th>
-          <th></th>
-
-      </tr>
-  </tfoot>
-
-  
-</table>
-    `;
+ if(resultStored.length > 0 ){
+  resultStored.forEach((adding)=> listCart.innerHTML += createCardC(adding));
+  showFullPrice()
+ } else{
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Something happened while loading the products!",
+  });
+ }
 }
 
+function showFullPrice(){
+  const totalCart =  resultStored.reduce((a,b)=> a + b.price,0)  
 
-  const stored = localStorage.getItem("newCart");
-  const resultStored = JSON.parse(stored);
-  const buttonFinalizePurchase = document.querySelector("#finalizePurchase");
-
-
-function calculateTotal() {
-  const total = resultStored.reduce((acc, product) => acc + product.price, 0);
-  return total;
+  cell.textContent = `
+  $${totalCart}`
 }
 
-function updateTotal() {
-  const totalElement = document.getElementById('total');
-  const total = calculateTotal();
-  totalElement.textContent = `total: $${total}`;
-}
+emptyingAndLoading()
 
 
 
 
- 
+
 
 
 

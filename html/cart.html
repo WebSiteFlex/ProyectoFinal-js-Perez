@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +24,7 @@
     <script defer src="../js/index.js"></script>
     <title>Cart | Re.Vert</title>
 </head>
+
 <body class="gridCart">
     <header class="navbarHeade ">
         <nav class="navbar navbar-expand-lg">
@@ -38,7 +40,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="../html/cart.html">cart</a>
                         </li>
@@ -67,105 +69,112 @@
     </header>
     <!-- tittle -->
 
-        <div class="titleCart">
-            <h1 id="store">Store</h1>
-        </div>
+    <div class="titleCart">
+        <h1 id="store">Store</h1>
+    </div>
 
     <!-- cart -->
 
-   <main id="productCart">
+    <main id="productCart">
 
-    <section id="counter">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>My cart</th>
-                    <th>price</th>
-                </tr>
-            </thead>
+        <section id="counter">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>image</th>
+                        <th>tittle</th>
+                        <th>price</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <th><img src="../img/cereal products.jpg" alt="#"></th>
-                    <th class="price">$6.30</th>
-                </tr>
-            </tbody>
+                <tbody class="tableBody">
+                    <tr>
+                        <th><img src="../img/cereal products.jpg" alt="#"></th>
+                        <th class="price">$6.30</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td>Total:</td>
+                        <td id="price">$</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-        
-        </table>
-    </section>
-   
-    <div class="containerPurchase">
-        <button id="finalizePurchase">finalize purchase</button>
-    </div>
-   </main>
-
-<!-- footer -->
-
-   <footer class="footer">
-    <section class="section1">
-        <h3 class="titileS1">follow us</h3>
-        <h4 class="subtitleS2">@Re.vert</h4>
-
-        <div class="containerPfS1">
-            <div class="containerPS2">
-                <img src="../img/cheff.jpg" alt="imgProducts2">
-            </div>
-            <div class="containerPS2">
-                <img src="../img/inspired.jpg" alt="imgProducts2">
-            </div>
-            <div class="containerPS2">
-                <img src="../img/cleaner.jpg" alt="imgProducts2">
-            </div>
-            <div class="containerPS2">
-                <img src="../img/cereal products.jpg" alt="imgProducts2">
-            </div>
+        <div class="containerPurchase">
+            <button id="finalizePurchase">finalize purchase</button>
         </div>
-    </section>
-    <hr>
-    
+    </main>
 
-    <section class="section2">
-        <div class="containerS2N1">
-            <h3 class="subtitleS2">
-                Stay inspired and eco-conscious</h3>
-            <p class="paragrphS2">Receive the latest trends and tips on eco-friendly design, sustainable living,
-                zero waste and
-                eco-conscious practices.</p>
-            <form class="form1S2">
-                <label for="email">Email <span>*</span></label><input type="email" name="email"
-                    placeholder="Write your email: example@gmail.com" class="inputE">
-                <input type="submit" id="submit" name="send" value="send">
-            </form>
-        </div>
+    <!-- footer -->
 
-        <div class="containerS2N2">
-            <nav class="navFoo">
-                <ul class="lisNavegtaionFoo">
-                    <li><a href="#" class="linkFoo">home</a></li>
-                    <li><a href="#" class="linkFoo">shop all</a></li>
-                    <li><a href="#" class="linkFoo">our mission</a></li>
-                    <li><a href="#" class="linkFoo">contact</a></li>
-                    <li><a href="#" class="linkFoo">faq</a></li>
+    <footer class="footer">
+        <section class="section1">
+            <h3 class="titileS1">follow us</h3>
+            <h4 class="subtitleS2">@Re.vert</h4>
+
+            <div class="containerPfS1">
+                <div class="containerPS2">
+                    <img src="../img/cheff.jpg" alt="imgProducts2">
+                </div>
+                <div class="containerPS2">
+                    <img src="../img/inspired.jpg" alt="imgProducts2">
+                </div>
+                <div class="containerPS2">
+                    <img src="../img/cleaner.jpg" alt="imgProducts2">
+                </div>
+                <div class="containerPS2">
+                    <img src="../img/cereal products.jpg" alt="imgProducts2">
+                </div>
+            </div>
+        </section>
+        <hr>
+
+
+        <section class="section2">
+            <div class="containerS2N1">
+                <h3 class="subtitleS2">
+                    Stay inspired and eco-conscious</h3>
+                <p class="paragrphS2">Receive the latest trends and tips on eco-friendly design, sustainable living,
+                    zero waste and
+                    eco-conscious practices.</p>
+                <form class="form1S2">
+                    <label for="email">Email <span>*</span></label><input type="email" name="email"
+                        placeholder="Write your email: example@gmail.com" class="inputE">
+                    <input type="submit" id="submit" name="send" value="send">
+                </form>
+            </div>
+
+            <div class="containerS2N2">
+                <nav class="navFoo">
+                    <ul class="lisNavegtaionFoo">
+                        <li><a href="#" class="linkFoo">home</a></li>
+                        <li><a href="#" class="linkFoo">shop all</a></li>
+                        <li><a href="#" class="linkFoo">our mission</a></li>
+                        <li><a href="#" class="linkFoo">contact</a></li>
+                        <li><a href="#" class="linkFoo">faq</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <hr>
+        <section class="section3">
+            <div class="containerSpan">
+                <span>@by Re.vert powered and secured </span>
+            </div>
+            <div class="containerNavFoo2">
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">pinterest</a></li>
                 </ul>
-            </nav>
-        </div>
-    </section>
-    <hr>
-    <section class="section3">
-        <div class="containerSpan">
-            <span>@by Re.vert powered and secured </span>
-        </div>
-        <div class="containerNavFoo2">
-            <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">instagram</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">pinterest</a></li>
-            </ul>
-        </div>
-           
-    </section>
-</footer>
+            </div>
+
+        </section>
+    </footer>
 </body>
+
 </html>
