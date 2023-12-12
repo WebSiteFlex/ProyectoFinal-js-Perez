@@ -8,7 +8,7 @@ steps:
 
 //Enlasarme al DOM
 
-const URL2= "js/store.json";
+const URL2= "json/store.json";
 const cart = [];
 const cartNew = [];
 const newInStore = document.querySelector(".newIn");
@@ -50,22 +50,25 @@ function displayProducts() {
     });
   }
 }
+ function MsgProduct(msg){
+  Toastify({
+    text: msg,
+    style: {
+      background: "linear-gradient(to right, #8ADAB2, #DF826C)",
+    },
+    duration: 2000,
+  }).showToast();
+ }
 
 function productSelected() {
   const buttonsBuy = document.querySelectorAll("button.purchase");
   buttonsBuy.forEach((button) => {
     button.addEventListener("click", (event) => {
-      Toastify({
-        text: "Added Product",
-        style: {
-          background: "linear-gradient(to right, #8ADAB2, #DF826C)",
-        },
-        duration: 1000,
-      }).showToast();
       const id = parseFloat(event.target.id);
       const selected = cartNew.find((p) => p.id === id);
       cart.push(selected);
       localStorage.setItem("newCart", JSON.stringify(cart));
+      MsgProduct(`${selected.title} was added to cart`);
     });
   });
 }

@@ -207,18 +207,11 @@
   height: auto;
   padding: 1.875rem;
   margin-top: 1.875rem;
-  margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: repeat(7, 2fr);
-  grid-template-rows: repeat(7, 2fr);
-  row-gap: 10px;
-  column-gap: 10px;
-}
-.newIn div {
+  margin-bottom: 1.875rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .newIn div img {
   width: 200px;
@@ -705,4 +698,4 @@
   font-size: 19px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css%7D.map */
